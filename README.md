@@ -1,6 +1,6 @@
 # Mood Light - Arduino Project
 
-The **Mood Light** is an interactive Arduino-based lighting system that reacts to ambient light levels in a room. Using a single photoresistor, the project reads the light levels in the room its in and acordingly adjusts the colors of the **two RGB LEDs** to create a soothing and dynamic lighting effect. As the room gets darker or brighter, the RGB LEDs smoothly transition through different color combinations to match the mood of the space.
+The **Mood Light** is an interactive Arduino-based lighting system that reacts to ambient light levels in a room. Using a single photoresistor, the project reads the light levels in the room its in and acordingly adjusts the colors of the **two RGB LEDs** to create a soothing and dynamic lighting effect. As the room gets darker or brighter, the RGB LEDs smoothly transition through light levels to change the mood acording to the light level of the room.
 
 ---
 
@@ -21,8 +21,7 @@ The **Mood Light** is an interactive Arduino-based lighting system that reacts t
 1. The **photoresistor** detects ambient light intensity and sends an analog signal to the Arduino.
 2. The Arduino maps this signal to control the **red**, **green**, and **blue** channels of both **RGB LEDs**.
 3. As light levels change (e.g. lights turn off, sunset, etc.), the Arduino dynamically adjusts LED colors:
-   - Brighter light may produce cool or vibrant tones.
-   - Dimmer environments may trigger warmer or softer colors.
+   - Brighter light produce dimmer lights and vice versa
 4. The RGB LEDs mix colors via **PWM (pulse-width modulation)** on the Arduino's analog output pins.
 5. The system runs continuously, creating a live "mood" response to the room's lighting.
 
